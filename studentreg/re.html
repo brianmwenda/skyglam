@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="re.css" rel="stylesheet" type="text/css"/>
+    <!--link href="https://fonts.googleapis.com/css?family=play" rel="stylesheet"-->
+    <style>
+         #msg{
+            visibility:hidden;
+            min-width: 250px;
+            background-color:yellow;
+            color:#000;
+            text-align:center;
+            border-radius:2px;
+            padding:16px;
+            position:fixed;
+            z-index: 1;
+            right:33%;
+            top:30px;
+            font-size:17px;
+            margin-right:30px;
+
+        }
+        #msg.show{
+            visibility:visible;
+            -webkit-animation: fadein 0.5s,fadeout 0.5s 2.5s;
+            animation: fadein 0.5s,fadeout 0.5s 2.5s;
+        }
+        @-webkit-keyframes fadein{
+            from{top:0; opacity:0;}
+            to{top:20px; opacity:1;}
+        }
+        @keyframes fadein{
+            from{top:0;opacity:0;}
+            to{top:20px;opacity:1;}
+        }
+        @-webkit-keyframes fadeout{
+            from{top:20px;opacity:1;}
+            to{top:0;opacity:0;}
+        }
+        @keyframes fadeout{
+            from{top:20px;opacity:1;}
+            to{top:0;opacity:0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="reset">
+        <form>
+            <h2 align="center" style="color:white;">Reset Password</h2>
+            <input type="password" name="username" placeholder="Old Password"/><br/><br/>
+
+            <input type="password" name="username" placeholder="New Password"/><br/><br/>
+
+            <input type="password" name="username" placeholder="Confirm New Password"/><br/><br/>
+
+            <input type="button" value="Save" onclick="myFunction()"/><br/><br/>
+            <div id="msg">Congratulations password reset successfully!!!</div>
+
+            <a href="logn.html" style="text-decoration: none;">Go Back to Home Page</a><br/><br/>
+        </form>
+    </div>
+    
+</body>
+</html>
+<script>
+        function myFunction(){
+            var x = document.getElementById("msg");
+            x.className = "show";
+            setTimeout(function(){
+                x.className = x.className.replace("show", "");}, 3000);
+        }
+    </script>

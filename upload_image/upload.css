@@ -1,0 +1,89 @@
+body{
+    font-family:Tahoma, Geneva, sans-serif;
+    color:#fff;
+    background:url(8.jpg);
+    background-size: cover;
+}
+.signin{
+    background: rgb(44,62,80,0.7);
+    padding:40px;
+    width:auto;
+    margin:auto;
+    margin-top:100px;
+    height:260px;
+    margin-left:50%;
+    transform:translateX(-50%);
+
+}
+form{
+    width:auto;
+    text-align:center;
+}
+input{
+    width:240px;
+    text-align:center;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid white;
+    font-family:'play',sans-serif;
+    font-size:16px;
+    font-weight: 200px;
+    padding:10px 0;
+    transition:border 0.5s;
+    outline:none;
+    color:white;
+}
+input[type=button]{
+    border:none;
+    width:190px;
+    background:white;
+    color:#000;
+    font-size:16px;
+    line-height:25px;
+    padding:10px 0;
+    border-radius:15px;
+    cursor:pointer;
+}
+input[type=button]:hover{
+    color:#fff;
+    background-color: black;
+}
+h2{
+    color:white;
+
+}
+a{
+    color:yellow;
+    text-decoration:blink;
+}
+a:hover{
+    color:skyblue;
+
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+::placeholder{
+    color:aliceblue;
+    opacity:0.8;
+}
+.Adminbtn{
+  border:2px;
+  outline:2px solid white;
+}.submit{
+    border:none;
+    width:190px;
+    background:white;
+    color:#000;
+    font-size:16px;
+    line-height:25px;
+    padding:10px 0;
+    border-radius:15px;
+    cursor:pointer;
+}
+input[type=submit]:hover{
+    color:#fff;
+    background-color: black;
+}

@@ -1,0 +1,77 @@
+<?php
+$connect = mysqli_connect("localhost","root","","admin");
+
+
+  session_start();
+  if(isset($_SESSION['is_logged_in'])){
+    $loginsuccessurl = $base_url.'../pages/entryform.html';
+    header('location:'.$loginsuccessurl);
+  }
+
+//if insert button is pressed
+if(isset($_POST['btn'])){
+  //get the submitted data
+  $salt = "screw";
+  $password = $_POST['pass'];
+
+
+  $regino = $_POST['regno'];
+
+
+  $passwd1 = md5($password);
+  $passwd2 = sha1($passwd1);
+  $passwd3= crypt($passwd2,$salt);
+
+  $result = mysqli_query($connect,"SELECT * FROM std_tbl WHERE registration = '$regino'  and password = '$passwd3'")
+  or die ("Failed to Query database");
+
+$row = mysqli_fetch_array($result);
+if ($row['registration']== $regino &&  $row['password'] == $passwd3 ){
+echo '<script>alert("login success!! welcome")</script>';
+$_SESSION['is_logged_in'] = TRUE;
+$_SESSION['username'] = $regino;
+$loginsuccessurl = $base_url.'../pages/entryform.html';
+header('location:'.$loginsuccessurl);
+
+}else{
+echo '<script>alert("Access Dennied")</script>'.mysqli_error($connect);
+}
+}
+
+  ?>
+
+
+  <html>
+
+    <head>
+        <title>STUDENTS LOGIN</title>
+        <link  rel="stylesheet" href="log.css"> <!--href="https://fonts.googleapis.com/css?family=play"-->
+    </head>
+    <body>
+        <div class="signin">
+
+		<div id="frm">
+
+
+          <form method="POST">
+        <h2 style="color:white">Students Login</h2>
+
+          <input type="text" id="regno" name="regno" placeholder="Registration Number"><br><br><br><br>
+        <input type="password" id="pass" name="pass" placeholder="password"><br><br>
+
+
+        <button type="submit" name="btn" id="btn" value="submit" class="submit" style="font-family: Tahoma, Geneva, sans-serif"><strong>Login</strong></button><br><br>
+        <div id="container">
+          <a href="../admin/log.html">
+              <input type="button" id="btn" value="Admin" onclick="myFunction()"></a><br><br>
+                <a href="reset.html" style="margin-right:0px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Reset Password</a>
+            <a href="forgot.html" style="margin-left:30px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Forgot Password</a><br><br><br>
+              <a href="../index.html" style="text-decoration:none"><strong>HOME</strong></a><br><br>
+               Don`t have an account!<a href="../studentreg/signup.html" style="text-decoration:none;font-family:'play',sans-serif; color: yellow">&nbsp;Sign Up</a>
+        </div><br><br><br><br><br><br>
+
+        </form>
+        </div>
+        </div
+    </body>
+</html>

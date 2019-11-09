@@ -1,0 +1,116 @@
+<?php
+  $email = $emailErr="";
+  if(isset($_POST['btn'])){
+    $salt = "st";
+    $email = $_POST['email'];
+    $key = crypt(md5(sha1($email)),$salt);
+    $connect = mysqli_connect("localhost","root","","admin");
+    $sql ="SELECT id from std_tbl where email='$email'";
+    $query= mysqli_query($connect,$sql);
+    $flag=0;
+    while($row = mysqli_fetch_array($query,1)){
+      $flag = 1;
+
+    }
+    if($flag == 1){
+      $sql = "update std_tbl set forgot_password_code = '$key' where email='$email'";
+      $query = mysqli_query($connect, $sql);
+
+      if($query){
+
+
+        $message = $base_url."reset.html?key=".$key;
+        $message .= "<br>Click on this link";
+        $sub = "Password reset link";
+
+         require ("mail.php");
+        if(mail_send($email, $sub, $message)){
+          echo "link emailed";
+        }
+        else{
+          echo '<script>alert("error sending link") </script>';
+        }
+      }
+    }
+    else{
+      echo "email not found";
+    }
+  }
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="forgot.css" rel="stylesheet" type="text/css"/>
+      <link  rel="stylesheet" href="log.css">
+    <!--link href="https://fonts.googleapis.com/css?family=play" rel="stylesheet"-->
+    <style>
+         #snackbar{
+            visibility:hidden;
+            min-width: 250px;
+            background-color:yellow;
+            color:#000;
+            text-align:center;
+            border-radius:2px;
+            padding:16px;
+            position:fixed;
+            z-index: 1;
+            right:35.6%;
+            top:30px;
+            font-size:17px;
+            margin-right:40px;
+
+        }
+        #snackbar.show{
+            visibility:visible;
+            -webkit-animation: fadein 0.5s,fadeout 0.5s 2.5s;
+            animation: fadein 0.5s,fadeout 0.5s 2.5s;
+        }
+        @-webkit-keyframes fadein{
+            from{top:0; opacity:0;}
+            to{top:30px; opacity:1;}
+        }
+        @keyframes fadein{
+            from{top:0;opacity:0;}
+            to{top:30px;opacity:1;}
+        }
+        @-webkit-keyframes fadeout{
+            from{top:30px;opacity:1;}
+            to{top:0;opacity:0;}
+        }
+        @keyframes fadeout{
+            from{top:30px;opacity:1;}
+            to{top:0;opacity:0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="forget">
+        <form action="" method="POST">
+            <h2 align="center" style="color:white;">Student Password Recovery</h2>
+            <h5 style="font-size:14px; color:yellow;">Enter email here that you used on your account.We send link on your email
+            to reset your Password</h5>
+            <input type="email" name="email" placeholder="Enter Your Email" required/><br/><br/>
+
+              <button type="submit" name="btn" id="btn" value="submit" class="submit" style="font-family: Tahoma, Geneva, sans-serif"><strong>Send</strong></button><br><br>
+           <a href="log.html" style="text-decoration:none;">Go back to Home Page</a><br/><br/>
+           <div id="snackbar">Link sent to your email successfully!!</div>
+        </form>
+    </div>
+
+</body>
+</html>
+<script>
+    function myFunction(){
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){x.className = x.className.replace("show", "");},3000);
+    }
+</script>

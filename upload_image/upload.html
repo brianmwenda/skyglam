@@ -1,0 +1,68 @@
+
+
+
+<!--upload images to folders-->
+
+<?php
+$connect = mysqli_connect("localhost","root","","admin");
+
+if(isset($_FILES['image']) && ($_POST['btn'])){
+  $errors= array();
+  $file_name = $_FILES['image']['name'];
+  $file_size = $_FILES['image']['size'];
+  $file_tmp = $_FILES['image']['tmp_name'];
+  $file_type = $_FILES['image']['type'];
+  $file_ext = "jpg";
+  $location =  "../fashionhouse/images/new-men/new.".$file_ext;
+  $extensions = array("jpeg", "jpg", "png");
+$query= "INSERT INTO men_wear (name,image,location) VALUES ('$file_name','$file_tmp','$location')";
+if(mysqli_query($connect, $query)){
+  echo '<script> alert("file upload successfull")</script>';
+}else{
+  echo '<script> alert("failed")</script>'.mysqli_error($connect);
+}
+  if(in_array($file_ext, $extensions)=== false){
+    $errors = "extensions not allowed";
+
+  }if($file_size > 3046000){
+    $errors = "file too large";
+  }
+  if(empty($errors) == true){
+    move_uploaded_file($file_tmp,$location);
+    echo '<script>alert("upload success")</script>';
+  }else{
+    print_r($errors);
+  }
+  }
+?>
+
+  <html>
+
+    <head>
+        <title>STUDENTS LOGIN</title>
+        <link  rel="stylesheet" href="upload.css"> <!--href="https://fonts.googleapis.com/css?family=play"-->
+    </head>
+    <body>
+
+        <div class="signin">
+
+		<div id="frm" >
+        <h2 style="color:white;margin-left:56%;transform:translateX(-50%)">Men Wear</h2>
+
+
+        <form class="fom" id="men" action="upload.html " enctype="multipart/form-data" method="POST" style="display:">
+              <input type="file" name="image"><br><br><br>
+              <button type="submit" name="btn" id="btn" value="submit" class="submit" style="font-family: Tahoma, Geneva, sans-serif"><strong>Upload men</strong></button><br><br>
+
+                <a href="womenupload.html" style="text-decoration:none"><strong>Women</strong></a>
+                <a href="../index.html" style="text-decoration:none;margin-left:40%"><strong>FINISH</strong></a><br><br>
+
+
+          </form>
+
+
+
+            </div>
+        </div
+    </body>
+</html>

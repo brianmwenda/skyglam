@@ -1,0 +1,67 @@
+<?php
+$connect = mysqli_connect("localhost","root","","admin");
+
+//if insert button is pressed
+if(isset($_POST['btn'])){
+  //get the submitted data
+  $salt = "screw";
+  $password = $_POST['pass'];
+  $department = $_POST['Dep'];
+  $username = $_POST['user'];
+  $passwd1 = md5($password);
+  $passwd2 = sha1($passwd1);
+  $passwd3= crypt($passwd2,$salt);
+
+
+  if($department !=="" && $username !== "" && $passwd3 !==""){
+  $query= "INSERT INTO log_tbl(department,username,password) VALUES ('$department','$username','$passwd3')";
+
+  if(mysqli_query($connect, $query)){
+    echo '<script> alert("Admin registration Successful!!!")</script>';
+  }
+}else{
+  echo '<script>alert("please insert all fields!!")</script>';
+}
+
+}
+  ?>
+
+
+
+
+
+
+<html>
+
+    <head>
+        <title>STUDENTS LOGIN</title>
+        <link  rel="stylesheet" href="log.css"> <!--href="https://fonts.googleapis.com/css?family=play"-->
+
+    </head>
+    <body>
+        <div class="signin">
+
+		<div id="frm">
+
+
+          <form method="POST">
+        <h2 style="color:white">Admin Registration</h2>
+      <input type="text" id="Dep" name="Dep" placeholder="Department"><br><br>
+        <input type="text" id="user" name="user" placeholder="User Name"><br><br>
+        <input type="password" id="pass" name="pass" placeholder="password"><br><br>
+
+            <button type="submit" name="btn" id="btn" value="submit" class="submit" style="font-family: Tahoma, Geneva, sans-serif"><strong>Submit</strong></button><br><br>
+        <div id="container">
+
+                <a href="reset.html" style="margin-right:0px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Reset Password</a>
+            <a href="forgot.html" style="margin-left:30px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Forgot Password</a><br><br>
+            <a href="log.html">
+                <input type="button" id="btn" value="Log In"  style="font-family: Tahoma, Geneva, sans-serif"></a><br><br>
+            <a href="log.html" style="text-decoration:none"><strong>BACK</strong></a>
+        </div><br><br><br><br><br><br>
+
+        </form>
+        </div>
+      </div>
+    </body>
+</html>

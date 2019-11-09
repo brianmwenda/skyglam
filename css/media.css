@@ -1,0 +1,1703 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 1900px) {
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:27%;
+	}
+}
+@media screen and (max-width: 1800px) {
+	.banner .wrapper{
+		top:22%;
+	}
+	
+	/*inner page start*/
+	.content-outer{
+		background-position:10px 44px;
+	}
+	.content{
+		background-position:100% 90px;
+	}
+}
+@media screen and (max-width: 1700px) {
+	.banner .wrapper{
+		top:20%;
+	}
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:22%;
+	}
+}
+@media screen and (max-width: 1650px) {
+	.home-student-outer{
+		background-position:0 74px;
+	}
+	.home-student{
+		background-position:103% bottom;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.home-student-outer{
+		background-size:10%;
+	}
+	.home-student{
+		background-position:99% bottom;
+		background-size:10%;
+	}
+	
+	/*inner page start*/
+	.content-outer{
+		background-size:10%;
+	}
+	.content{
+		background-size:10%;
+	}
+}
+@media screen and (max-width: 1500px) {
+	.banner .wrapper{
+		top:18%;
+	}
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:18%;
+	}
+}
+@media screen and (max-width: 1450px) {
+	.home-student-outer{
+		background-size:7%;
+	}
+	.home-student{
+		background-size:8%;
+	}
+	
+	/*inner page start*/
+	.content-outer{
+		background-size:7%;
+		background-position:0 44px;
+	}
+	.content{
+		background-size:7%;
+		background-position:right 50px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	/*body{
+		border:1px solid black;
+	}*/
+	.banner .wrapper{
+		top:15%;
+	}
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:16%;
+	}
+}
+@media screen and (max-width: 1350px) {
+	/*body{
+		border:1px solid red;
+	}*/
+	.our-program .jcarousel-container{
+		width:752px !important;
+	}
+	.home-student, .home-student-outer, .content-outer, .content{
+		background:none;
+	}
+	
+	/*inner page start*/
+	.testi-carousel .leftArrow, .testi-carousel .jcarousel-prev{
+		left:-55px;
+	}
+	.testi-carousel .rightArrow, .testi-carousel .jcarousel-next{
+		right:-55px;
+	}
+}
+@media screen and (max-width: 1300px) {
+	/*body{
+		border:1px solid yellow;
+	}*/
+	.banner .wrapper{
+		top:12%;
+	}
+	
+	/*inner page start*/
+	.inner-banner-cont{
+		padding:25px 50px 30px;
+		width:auto;
+		margin:0;
+		display:inline-block;
+	}
+	.inner-banner .wrapper{
+		text-align:center;
+		top:26%;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:1050px !important;
+	}
+}
+@media screen and (max-width: 1250px) {
+	/*body{
+		border:1px solid blue;
+	}*/
+	.banner .wrapper{
+		top:10%;
+	}
+	
+	/*inner page start*/
+	.testi-carousel{
+		background-attachment:inherit !important;
+		background-position:center center !important;
+	}
+}
+@media screen and (max-width: 1200px) {
+	/*body{
+		border:1px solid pink;
+	}*/
+	.wrapper{
+		margin:0 2%;
+		width:auto;
+	}
+	.nav{
+		padding:0;
+	}
+	.banner-cont{
+		padding:20px 20px 25px;
+	}
+	.banner .wrapper{
+		top:15%;
+	}
+	.banner p{
+		margin:0 0 12px;
+	}
+	.int-student-right{
+		width:43%;
+	}
+	.home-student-list li{
+		width:44.4%;
+	}
+	.twit-feed, .facebook{
+		width:28%;
+	}
+	.aboutus{
+		padding:30px 20px 46px;
+		width:32%;
+		margin:0 0 0 40px;
+	}
+	.ftlogo{
+		margin:0;
+	}
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:24%;
+	}
+	.inner-left{
+		width:68.5%;
+	}
+	.inner-right{
+		width:300px;
+		margin:0;
+		float:right;
+	}
+	.inner-pic-left{
+		width:42%;
+	}
+	.mission{
+		width:43.2%;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:1000px !important;
+	}
+	.vision{
+		float:right;
+	}
+	.student-video{
+		width:40%;
+		height:250px;
+	}
+	.archive-year select{
+		width:190px;
+	}
+	.content ul.program-list li{
+		width:47.7%;
+	}
+	.program-carousel{
+		width:480px;
+	}
+	.bxslider-pager-wrap{
+		width:426px;
+	}
+	.program-detail-left{
+		width:50%;
+	}
+	.content ul.student-life-list li img{
+		width:100%;
+	}
+}
+@media screen and (max-width: 1150px) {
+	/*body{
+		border:1px solid green;
+	}*/
+	.nav li{
+		margin:0 35px 0 0;
+	}
+	.home-student-list li{
+		width:44.2%;
+	}
+	
+	/*inner page start*/
+	.inner-left{
+		width:67.2%;
+	}
+	.mission{
+		width:43%;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:950px !important;
+	}
+	.contact-left{
+		width:46%;
+	}
+	.contact-right{
+		width:48%;
+	}
+	.contact-form{
+		padding:30px 30px 55px;
+	}
+	.content ul.program-list li{
+		width:47.6%;
+	}
+	.program-detail-left{
+		width:48%;
+	}
+}
+@media screen and (max-width: 1100px) {
+	/*body{
+		border:1px solid orange;
+	}*/
+	.banner .wrapper{
+		top:11%;
+	}
+	.nav li{
+		margin:0 26px 0 0;
+	}
+	.home-student-list li{
+		width:43.7%;
+	}
+	.aboutus{
+		width:31%;
+	}
+	.ftlogo{
+		width:400px;
+		padding:0;
+	}
+	.ftnav li{
+		margin:0 6px 0 0;
+		padding:0 8px 0 0;
+	}
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:22%;
+	}
+	.inner-left{
+		width:64.7%;
+	}
+	.mission{
+		width:42.4%;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:850px !important;
+	}
+	.content ul.program-list li{
+		width:47.4%;
+	}
+	.program-detail-left{
+		width:46%;
+	}
+	
+	.ftlogo {
+    width: 305px;
+    padding: 0;
+}
+}
+@media screen and (max-width: 1024px) {
+	/*body{
+		border:1px solid purple;
+	}*/
+	.header{
+		padding:20px 0;
+	}
+	.logo{
+		width:340px;
+	}
+	.top-right{
+		padding:0;
+	}
+	.top-number{
+		margin:15px 0 0;
+	}
+	.responsive{
+		display:block;
+	}
+	.navigation{
+		padding:12px 0;
+	}
+	.nav{
+		display:none;
+		overflow:hidden;
+	}
+	.nav li{
+		display:block;
+		border-bottom:1px solid #dcdbdb;
+		margin:0;
+		padding:0;
+	}
+	.nav li:last-child{
+		border-bottom:none;
+	}
+	.nav li a{
+		display:block;
+		padding:10px 0 8px;
+	}
+	.nav{
+		display:none;
+		overflow:hidden;
+		opacity:0;
+		min-height:0;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		transition: none;
+		-webkit-transform-style: preserve-3d;
+	}
+	.flexnav-show{
+		max-height: 2000px;
+		overflow:visible !important;
+        opacity: 1 !important ;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		display:block !important;
+		z-index:100000;
+	}
+	.nav li.parent-dropdown a{
+		background:url(../images/dropdown_ar_dwn.png) no-repeat right center;
+	}
+	.nav li.parent-dropdown a.active{
+		background:url(../images/dropdown_ar_up.png) no-repeat right center;
+	}
+	.nav li ul{
+		position:static;
+		width:auto;
+		border-bottom:none;
+		background-color:#13a19c;
+	}
+	.nav li ul li{
+		text-align:center;
+	}
+	.nav li ul li a{
+		color:#FFF;
+		background:none !important;
+	}
+	.nav li ul li a.active,.nav li ul li a:hover{
+		color:#13a19c;
+		background:#FFF !important;
+	}
+	.banner h1{
+		font-size:30px;
+		line-height:34px;
+		padding: 0 0 10px;
+	}
+	.banner h1 span{
+		font-size:18px;
+		line-height:25px;
+	}
+	.banner p{
+		line-height:26px;
+	}
+	.banner-cont{
+		width:540px;
+	}
+	.banner .more{
+		padding:0 20px;
+	}
+	.banner .wrapper{
+		top:13%;
+	}
+	.our-program, .int-student-right, .home-student, .call-to-action{
+		padding:50px 0;
+	}
+	.heading{
+		font-size:30px;
+		line-height:34px;
+	}
+	.our-program p{
+		margin:0 20px 30px;
+	}
+	.int-student-right .heading{
+		margin:0 0 18px;
+	}
+	.int-student-right p{
+		margin:0 0 25px;
+	}
+	.home-student-list li{
+		width:43.6%;
+	}
+	.feeds-section{
+		margin:50px 0 0;
+	}
+	.aboutus, .facebook{
+		margin:0 0 0 30px;
+	}
+	.twit-feed, .facebook{
+		width:29%;
+	}
+	.facebook ul li{
+		margin:0 0 20px;
+	}
+	.call-to-action h2{
+		margin:0 50px 25px;
+		font-size:30px;
+		line-height:34px;
+		padding:0 0 12px;
+	}
+	.footer{
+		padding:30px 0;
+	}
+	.ftlogo {
+		padding: 10px 0 0;
+		width: 300px;
+	}
+	.ftsocial{
+		padding:20px 0;
+	}
+	.ftbottom{
+		padding:20px 0;
+	}
+	.int-student-right{
+		margin:0;
+		width:46%;
+	}
+	
+	/*inner page start*/
+	.inner-banner .wrapper{
+		top:30%;
+	}
+	.inner-left{
+		width:63.8%;
+	}
+	.inner-banner{
+		padding:1px 0 0;
+	}
+	.inner-banner h1{
+		font-size:30px;
+		line-height:35px;
+	}
+	.inner-banner-cont{
+		padding:13px 30px 20px;
+	}
+	.content{
+		padding:50px 0;
+	}
+	.right-menu-block{
+		padding:8px 15px;
+	}
+	.content .right-menu-block ul li{
+		padding:6px 0 9px 25px;
+		background-position:5px 17px;
+	}
+	.content h3{
+		font-size:24px;
+		line-height:30px;
+		margin:0 0 25px;
+	}
+	.inner-pic-left{
+		margin:8px 20px 10px 0;
+	}
+	.content p, .content ul, .content ol{
+		margin:0 0 20px;
+	}
+	.content ol.big li{
+		margin:0 0 20px;
+	}
+	.divider{
+		margin:28px 0;
+	}
+	.testimonial{
+		padding:20px 15px;
+	}
+	.content .testimonial p, .testi-carousel ul li p{
+		font-size:20px;
+		line-height:26px;
+	}
+	.content .testimonial p.title, .testi-carousel ul li p.title{
+		font-size:16px;
+	}
+	.inner-pic-right{
+		width:40%;
+		margin-left:25px;
+	}
+	.mission{
+		padding:0 20px;
+		width:43.9%;
+	}
+	.content .mission h6{
+		margin:20px 0 10px;
+	}
+	.content .mission p{
+		padding:0;
+	}
+	.testi-carousel{
+		padding:50px 0;
+	}
+	.admission{
+		padding:20px 20px 6px;
+	}
+	.content ul.faq-list li{
+		font-size:18px;
+		line-height:27px;
+	}
+	.content ul.faq-list li a{
+		background-position:16px 16px;
+		padding:10px 20px 10px 30px;
+	}
+	.content ul.faq-list li a.active{
+		background-position:12px 16px;
+	}
+	.content ul.contact-info li p span{
+		font-size:18px;
+	}
+	.content ul.contact-info li{
+		margin:0 0 15px;
+	}
+	.content ul.contact-info{
+		margin:0 0 40px;
+	}
+	.contact-form{
+		padding:25px 20px 30px;
+	}
+	.contact-left{
+		padding:25px 0 0;
+	}
+	.contact-form input[type="text"], .add-comment input[type="text"]{
+		height:44px;
+	}
+	#map_wrapper{
+		height:350px;
+	}
+	.student-video{
+		height:200px;
+	}
+	.student-video .play{
+		background-size:65px;
+	}
+	.content ul.student-life-list li{
+		margin:0 0 35px;
+	}
+	.content ul.pagination{
+		margin:35px 0 0px;
+	}
+	.add-comment{
+		padding:30px 20px;
+	}
+	.program-carousel{
+		width:400px;
+	}
+	.bxslider-pager-wrap{
+		width:281px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		background-size:100% !important;
+		width:40px !important;
+		height:63px !important;
+	}
+	.content ul.program-info{
+		margin:0 0 30px;
+	}
+	.content .posted-comments ul li{
+		margin:0 0 30px;
+	}
+	.program-detail-left{
+		width:53%;
+	}
+	.content ul.tution-table li h4{
+		padding:8px 10px;
+	}
+	.content ul.tution-table li p{
+		padding:10px;
+	}
+	.content ul.program-list li h5{
+		font-size:18px;
+		padding:18px 0;
+	}
+	.program-block{
+		padding:0 95px 0 15px;
+	}
+	.content ul.program-list li{
+		width:48.4%;
+		margin:0 30px 30px 0;
+	}
+	.content ol.big{
+		padding:0 0 0 44px;
+	}
+	.content ol.big li::before{
+		left:-45px;
+	}
+	.content ol.big li::after{
+		left:-12px;
+	}
+	.ftlogo{
+		padding:0;
+		margin:0 auto;
+		float:none;
+	}
+	.ftright{
+		float:none;
+		text-align:center;
+		margin:22px 0 0;
+	}
+	.ftinfo li{
+		float:none;
+		overflow:hidden;
+		margin:0 0 15px;
+	}
+	
+}
+@media screen and (max-width: 1000px) {
+	/*body{
+		border:1px solid grey;
+	}*/
+	.banner .wrapper{
+		top:12%;
+	}
+	.home-student-list li{
+		width:43.2%;
+	}
+	.twit-feed, .facebook{
+		width:auto;
+		float:none;
+		overflow:hidden;
+		padding:0;
+	}
+	.facebook{
+		margin:35px 0 0;
+	}
+	.aboutus{
+		width:auto;
+		float:none;
+		overflow:hidden;
+		margin:30px 0 0;
+	}
+	.ftnav{
+		text-align:center;
+		float:none;
+		padding:0;
+	}
+	.ftnav li{
+		float:none;
+		display:inline-block;
+		vertical-align:top;
+	}
+	.ftbottom-right{
+		float:none;
+		overflow:hidden;
+		text-align:center;
+		padding:10px 0 0;
+	}
+	.feeds-section{
+		margin:35px 0 0;
+	}
+	
+	/*inner page start*/
+	.inner-left{
+		width:auto;
+		float:none;
+		overflow:hidden;
+	}
+	.inner-right{
+		width:auto;
+		float:none;
+		overflow:hidden;
+		margin:20px 0 0;
+	}
+	.testimonial{
+		margin:0 0 20px;
+	}
+	.mission{
+		width:43.5%;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:800px !important;
+	}
+	.content ul.faq-list{
+		margin: 0 0 20px;
+	}
+	.content ul.top-social li{
+		margin:0 20px 0 0;
+	}
+	.content ul.pagination{
+		margin:35px 0 20px;
+	}
+	.student-video{
+		height:250px;
+	}
+	.archive-year select{
+		width:90%;
+		background-position:98% center;
+	}
+	.content ul.student-life-list{
+		padding:0;
+	}
+	.content ul.program-list li{
+		width:48.3%;
+	}
+	.program-detail-left{
+		width:51%;
+	}
+	.ftlogo {
+    padding: 10px 0 0;
+    width: 240px;
+}
+}
+@media screen and (max-width: 950px) {
+	/*body{
+		border:1px solid brown;
+	}*/
+	.banner .wrapper{
+		top:10%;
+	}
+	.apply-online{
+		margin:0 0 0 10px;
+	}
+	.our-program .jcarousel-container{
+		width:366px !important;
+	}
+	.home-student-list li{
+		float:none;
+		width:auto;
+		margin:0 0 30px;
+		height:auto !important;
+		overflow:hidden;
+	}
+	.home-student-list li:last-child{
+		margin:0;
+	}
+	.home-student-list li .home-student-cont ul li{
+		float:left;
+	}
+	
+	/*inner page start*/
+	.mission{
+		height:auto !important;
+		float:none;
+		overflow:hidden;
+		width:auto;
+	}
+	.vision{
+		margin:25px 0 0;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:750px !important;
+	}
+	.content ul.program-list li{
+		width:48.2%;
+	}
+	.program-carousel{
+		width:300px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		top:36% !important;
+	}
+	.program-detail-left{
+		width:61%;
+	}
+	
+	
+}
+@media screen and (max-width: 900px) {
+	/*body{
+		border:1px solid black;
+	}*/
+	.top-number p.toll-free{
+		float:right;
+		clear:both;
+		line-height:22px;
+		margin:0 0 8px;
+	}
+	.apply-online{
+		float:right;
+		clear:both;
+	}
+	.top-number{
+		margin:12px 0 0;
+	}
+	.apply-online, .banner .more, .enroll, .home-student .more, .apply-now, .student-life-list li .more{
+		font-size:14px;
+		line-height:33px;
+		height:32px;
+	}
+	.logo{
+		margin:8px 0 0;
+	}
+	.banner .wrapper, .inner-banner .wrapper{
+		margin:0;
+		position:static;
+		overflow:hidden;
+		background:url(../images/clto_action_pattern.png) repeat 0 0;
+	}
+	.banner-cont, .inner-banner-cont {
+		background:none;
+		margin: 0 2%;
+		padding: 35px 0 40px;
+		width: auto;
+	}
+	.banner h1, .banner p{
+		color:#FFF;
+	}
+	.banner h1{
+		margin:0 0 12px;
+	}
+	.banner p{
+		margin:0 0 20px;
+	}
+	.banner .more:hover{
+		border:2px solid #FFF;
+		color:#FFF;
+	}
+	
+	
+	/*inner page start*/
+	.inner-banner-cont{
+		padding:20px 0;
+		display:block;
+	}
+	.inner-banner h1{
+		color:#FFF;
+		background:url(../images/inner_banner_hdline_wht.png) no-repeat center bottom;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:700px !important;
+	}
+	/*.content .general-top ul{
+		overflow:visible;
+	}*/
+	.general-top .inner-pic-right{
+		margin:0 0 10px 25px;
+	}
+	.contact-left{
+		padding:0;
+		float:none;
+		width:auto;
+		overflow:hidden;
+	}
+	.contact-right{
+		width:auto;
+		float:none;
+		overflow:hidden;
+		margin:40px 0 0;
+	}
+	.content ul.program-list li{
+		width:48.1%;
+	}
+	.program-detail-left{
+		width:59%;
+	}
+}
+@media screen and (max-width: 850px) {
+	/*body{
+		border:1px solid red;
+	}*/
+	.int-student-pic{
+		height:280px;
+		position:static;
+		width:100%;
+	}
+	.int-student-right{
+		width:auto;
+		float:none;
+		overflow:hidden;
+		padding:30px 0 50px;
+	}
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:650px !important;
+	}
+	.program-detail-left{
+		width:56%;
+	}
+	.content ul.program-list li{
+		width:auto;
+		float:none;
+		margin:0 0 30px;
+		overflow:hidden;
+	}
+	.content ul.program-list li h5{
+		height:auto !important;
+	}
+}
+@media screen and (max-width: 800px) {
+	/*body{
+		border:1px solid yellow;
+	}*/
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:600px !important;
+	}
+	.program-detail-left{
+		width:54%;
+	}
+}
+@media screen and (max-width: 768px) {
+	/*body{
+		border:1px solid blue;
+	}*/
+	.logo{
+		width:280px;
+		margin:11px 0 0;
+	}
+	.header{
+		padding:15px 0;
+	}
+	.header .top-social li a{
+		width:18px;
+		height:17px;
+	}
+	.top-number p.toll-free{
+		font-size:16px;
+		margin:0 0 5px;
+	}
+	.top-number{
+		margin:10px 0 0;
+	}
+	.banner h1, .heading{
+		font-size:24px;
+		line-height:30px;
+	}
+	.banner h1 span{
+		font-size:16px;
+		line-height:24px;
+	}
+	.banner-cont{
+		padding:30px 0 35px;
+	}
+	.banner p, .int-student-right p,.aboutus p{
+		font-size:16px;
+		line-height:24px;
+	}
+	.our-program, .int-student-right, .home-student, .call-to-action{
+		padding:40px 0;
+	}
+	.our-program p{
+		font-size:17px;
+		line-height:25px;
+		margin:0 0 20px;
+	}
+	.our-program .rightArrow, .our-program .jcarousel-next, .our-program .leftArrow, .our-program .jcarousel-prev{
+		width:35px;
+		background-size:100% !important;
+		height:55px;
+		top:40%;
+	}
+	.our-program .rightArrow, .our-program .jcarousel-next{
+		right:-48px;
+	}
+	.our-program .leftArrow, .our-program .jcarousel-prev{
+		left:-48px;
+	}
+	.our-program ul li .pro-online{
+		font-size:15px;
+		line-height:34px;
+		height:32px;
+	}
+	.our-program ul li .pro-online span{
+		height:32px;
+		background-position:0 11px !important;
+	}
+	.int-student-right{
+		padding:25px 0 40px;
+	}
+	.int-student-pic{
+		height:250px;
+	}
+	.home-student-cont p, .twit-feed ul li{
+		line-height:24px;
+	}
+	.home-student-list{
+		padding:2px 0 40px;
+	}
+	.feeds-section h3{
+		padding:22px;
+		line-height:28px;
+		padding:0 0 10px;
+	}
+	.aboutus{
+		padding:25px 20px;
+	}
+	.call-to-action h2 {
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0 40px 25px;
+	}
+	.apply-now{
+		padding:0 20px;
+	}
+	.footer{
+		padding:20px 0;
+	}
+	.ftright{
+		margin:18px 0 0;
+	}
+	.ftnav li{
+		padding:0;
+		background:none;
+		margin:0;
+		display:block;
+	}
+	
+	/*inner page start*/
+	.inner-banner h1{
+		font-size:24px;
+		line-height:30px;
+	}
+	.inner-banner-cont{
+		padding:15px 0 20px;
+	}
+	.content{
+		padding:40px 0;
+	}
+	.content h3 {
+		font-size: 22px;
+		line-height: 28px;
+		margin: 0 0 20px;
+	}
+	.content h6{
+		font-size:17px;
+		line-height:26px;
+		margin:0 0 15px;
+	}
+	.inner-pic-left{
+		width:38%;
+		margin:8px 15px 10px 0;
+	}
+	.content p, .content ol, .content ul{
+		margin:0 0 15px;
+	}
+	.content p, .content ul li, .content ol li p, .content .faq-cont p{
+		font-size:17px;
+		line-height:26px;
+	}
+	.content ul li{
+		background-position:0 8px;
+	}
+	.divider{
+		margin:22px 0;
+	}
+	.content .right-menu-block ul li{
+		background-position:5px 15px;
+	}
+	.content .testimonial p, .testi-carousel ul li p{
+		font-size:18px;
+		line-height:24px;
+		padding:6px 0 0;
+	}
+	.content .testimonial p img,.testi-carousel ul li p img{
+		width:30px;
+		margin:-6px 0 0;
+	}
+	.content ol.big li{
+		font-size:20px;
+	}
+	.content ol.big{
+		padding:0 0 0 40px;
+	}
+	.content ol li::before,.content ol li::after{
+		top:-1px;
+	}
+	.content ol.big li::before {
+		left: -38px;
+		top: -1px;
+	}
+	.content ol.big li::after {
+		top: -1px;
+	}
+	@-moz-document url-prefix(){ 
+	  .content ol.big li::before {
+		 top: -3px;
+	  }
+	   .content ol.big li::after {
+		 top: -3px;
+	  }
+	}
+	.content ol.big li p{
+		margin:0 0 0 8px;
+	}
+	.content ol.big li{
+		margin:0 0 15px;
+	}
+	.mission{
+		padding:0 10px;
+	}
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:550px !important;
+	}
+	.testi-carousel{
+		padding:30px 0;
+	}
+	.admission{
+		padding:20px 10px 5px;
+	}
+	.content ul.faq-list li {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.content ul.faq-list li a {
+		background-position: 10px 16px;
+		padding: 10px 10px 10px 22px;
+	}
+	.content ul.faq-list li a.active{
+		background-position:6px 16px;
+	}
+	.content ul.contact-info li p span{
+		font-size:16px;
+	}
+	.contact-form{
+		padding:25px 15px 30px;
+	}
+	.contact-form input[type="text"], .add-comment input[type="text"]{
+		height:40px;
+		font-size:16px;
+	}
+	.contact-form textarea, .add-comment textarea{
+		height:100px;
+		font-size:16px;
+	}
+	.contact-field{
+		padding:0 10px;
+	}
+	#map_wrapper{
+		height:300px;
+	}
+	.content ul.contact-info{
+		margin:0 0 30px;
+	}
+	.content ul.top-social li a{
+		width:21px;
+		height:20px;
+	}
+	.archive-year select{
+		font-size:16px;
+	}
+	.post-date{
+		padding:0 0 15px;
+	}
+	.content ul.student-life-list li{
+		margin:0 0 30px;
+	}
+	.student-video{
+		height:200px;
+	}
+	.content .post-date ul.top-social{
+		margin:25px 0 0;
+	}
+	.add-comment{
+		padding:25px 10px;
+	}
+	.content ul.program-list li .pro-online{
+		font-size:14px;
+	}
+	.program-carousel{
+		width:90%;
+		float:none;
+		margin:0 auto 40px;
+	}
+	.bxslider-pager-wrap{
+		width:571px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		top:40% !important;
+	}
+	.content .posted-comments ul li{
+		margin:0 0 25px;
+	}
+	.content .posted-comments ul li h4{
+		font-size:18px;
+	}
+	.student-detail-video{
+		height:250px;
+	}
+	.program-detail-left{
+		width:auto;
+		float:none;
+		overflow:hidden;
+		margin:0 0 30px;
+	}
+	.content ul.tution-table li h4{
+		font-size:17px;
+	}
+	.content ul.program-list li h5 {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 15px 0;
+	}
+	.content ul.program-list li h5 span{
+		height:24px;
+	}
+}
+@media screen and (max-width: 700px) {
+	/*body{
+		border:1px solid pink;
+	}*/
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:500px !important;
+	}
+	.content ul.student-life-list li ul.posts li{
+		float:none;
+		margin:0 0 5px;
+	}
+	.content ul.student-life-list li ul.posts li:last-child{
+		margin:0;
+	}
+	.program-carousel{
+		width:auto;
+	}
+}
+@media screen and (max-width: 650px) {
+	/*body{
+		border:1px solid green;
+	}*/
+	.logo{
+		float:none;
+		margin:0 auto 12px;
+	}
+	.top-right{
+		text-align:center;
+		float:none;
+		overflow:hidden;
+	}
+	.top-social{
+		float:none;
+		text-align:center;
+	}
+	.top-social li{
+		float:none;
+		display:inline-block;
+		margin:0 8px 0 0;
+		vertical-align:top;
+	}
+	.top-number p.toll-free{
+		float:none;
+	}
+	.top-number{
+		margin:6px 0 0;
+	}
+	.apply-online{
+		float:none;
+	}
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:450px !important;
+	}
+	.content ul.top-social{
+		text-align:left;
+	}
+	.content ul.top-social li{
+		float:left;
+	}
+	.student-video{
+		height:180px;
+	}
+	.archive-year select{
+		width:86%;
+		background-position:96% center;
+	}
+	.bxslider-pager-wrap{
+		width:426px;
+	}
+}
+@media screen and (max-width: 600px) {
+	/*body{
+		border:1px solid orange;
+	}*/
+	.home-student-list li{
+		padding:15px 12px;
+	}
+	.aboutus{
+		padding:25px 12px;
+	}
+	.call-to-action h2{
+		margin:0 0 25px;
+	}
+	.call-to-action h2{
+		font-size:20px;
+		line-height:26px;
+		padding: 0 0 12px;
+	}
+	.banner h1, .heading {
+		font-size: 22px;
+		line-height: 26px;
+	}
+	.our-program .jcarousel-container{
+		padding:0 0 65px;
+	}
+	.our-program .rightArrow, .our-program .jcarousel-next, .our-program .leftArrow, .our-program .jcarousel-prev{
+		top:auto;
+		bottom:0;
+		background-position:0 center !important;
+		height:40px;
+	}
+	.our-program .rightArrow, .our-program .jcarousel-next{
+		right:38%;
+	}
+	.our-program .leftArrow, .our-program .jcarousel-prev{
+		left:38%;
+	}
+	.int-student-pic{
+		height:200px;
+	}
+	
+	/*inner page start*/
+	.inner-banner h1{
+		font-size:22px;
+		line-height:28px;
+	}
+	.content p, .content ul li, .content ol li p, .content .faq-cont p{
+		font-size:16px;
+		line-height:24px;
+	}
+	.content ul li{
+		background-position:0 6px;
+	}
+	.content .right-menu-block ul li{
+		background-position:5px 13px;
+	}
+	.content ol li::before,.content ol li::after{
+		top:-1px;
+	}
+	@-moz-document url-prefix(){ 
+		 .content ol li::before,.content ol li::after{
+			top:-3px;
+		}
+	}
+	.content ol.big li{
+		font-size:18px;
+	}
+	.content ol.big li::before{
+		left:-35px;
+	}
+	@-moz-document url-prefix(){ 
+		 .content ol.big li::before{
+			left:-29px;
+		}
+	}
+	.content ol.big{
+		padding: 0 0 0 33px;
+	}
+	.inner-pic-right{
+		width:38%;
+		margin:0 0 10px 20px;
+	}
+	.general-top .inner-pic-right{
+		margin:0 0 10px 20px;
+	}
+	.testi-carousel .jcarousel-container{
+		padding:0 0 60px;
+	}
+	.testi-carousel .leftArrow, .testi-carousel .jcarousel-prev{
+		left:42%;
+	}
+	.testi-carousel .rightArrow, .testi-carousel .jcarousel-next{
+		right:42%;
+	}
+	.testi-carousel .rightArrow, .testi-carousel .jcarousel-next, .testi-carousel .leftArrow, .testi-carousel .jcarousel-prev{
+		height:40px;
+		background-position:0 center !important;
+		top:auto;
+		bottom:0;
+	}
+	#map_wrapper{
+		height:250px;
+	}
+	.contact-form{
+		padding:20px 10px 25px;
+	}
+	.content ul.top-social li{
+		margin:0 16px 0 0;
+	}
+	.student-video {
+		float: none;
+		height: 230px;
+		margin: 0 0 15px;
+		width: 100%;
+	}
+	.content ul.student-life-list li ul.posts{
+		float:none;
+	}
+	.content .post-date ul.top-social {
+		float: none;
+		margin: 15px 0 0;
+	}
+	.contact-form input[type="submit"], .add-comment input[type="submit"]{
+		padding:0 18px;
+		line-height:32px;
+		height:36px;
+	}
+	.content ul.program-info{
+		margin:0 0 25px;
+	}
+	.content ul.program-info li p{
+		font-size:16px;
+	}
+	.content ul.program-info li span.subhead{
+		margin:0 15px 0 0;
+	}
+	.content ul.tution-table li p::before{
+		display:block;
+	}
+	.content ul.tution-table li h4{
+		display:none;
+	}
+	.content ul.tution-table, .content ul.tution-table li{
+		display:block;
+	}
+	.content ul.tution-table li p{
+		display:block;
+		width:auto !important;
+		padding:10px 10px 10px 205px;
+		border-right:none;
+		border-bottom:1px solid #c3c3c3;
+		text-align:left !important;
+		position:relative;
+	}
+	.content ul.tution-table li p:first-child{
+		background-color:#13a19c;
+		color:#FFF;
+	}
+	.content ul.tution-table li p:first-child:before{
+		background-color:#13a19c;
+		border-right:1px solid #c3c3c3;
+	}
+}
+@media screen and (max-width: 550px) {
+	/*body{
+		border:1px solid purple;
+	}*/
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:400px !important;
+	}
+	.program-block{
+		background-size:60px 100%;
+		padding:0 70px 0 10px;
+	}
+	.program-block:after{
+		width:60px;
+	}
+	.content ul.program-list li h5{
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 480px) {
+	/*body{
+		border:1px solid grey;
+	}*/
+	.home-student-pic {
+		height: 85px;
+		margin: 7px 10px 0 0;
+		width: 100px;
+	}
+	
+	/*inner page start*/
+	.inner-pic-left{
+		width:100%;
+		margin:0 0 15px;
+	}
+	.testimonial{
+		padding:15px 10px;
+	}
+	.right-menu-block{
+		padding:8px 10px;
+	}
+	.inner-pic-right{
+		width:100%;
+		float:none;
+		margin:0 0 20px !important;
+	}
+	.archive-year select{
+		width:80%;
+	}
+	.bxslider-pager-wrap{
+		width:281px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		width:32px !important;
+		height:50px !important;
+	}
+	.content ul.program-info li span.subhead{
+		display:block;
+		float:none;
+		width:auto;
+		margin:0;
+	}
+	.content ul.program-info li span.subhead:after{
+		display:none;
+	}
+	.student-detail-video{
+		height:200px;
+	}
+}
+@media screen and (max-width: 450px) {
+	/*body{
+		border:1px solid brown;
+	}*/
+	/*.our-program .jcarousel-container{
+		padding:0 0 50px;
+	}*/
+	.our-program .jcarousel-item, .our-program .jcarousel-container{
+		width:300px !important;
+	}
+	.our-program ul li h4, .our-program ul li p{
+		margin:0 15px 10px;
+	}
+	.our-program ul li{
+		margin:10px 20px 10px 0;
+	}
+	.our-program ul li::before {
+		height: 10px;
+		top: -10px;
+	}
+	.our-program ul li::after{
+		bottom:-10px;
+		height:10px;
+	}
+	.our-program .rightArrow, .our-program .jcarousel-next{
+		right:36%;
+	}
+	.our-program .leftArrow, .our-program .jcarousel-prev{
+		left:36%;
+	}
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:350px !important;
+	}
+	.testi-carousel .leftArrow, .testi-carousel .jcarousel-prev{
+		left:40%;
+	}
+	.testi-carousel .rightArrow, .testi-carousel .jcarousel-next{
+		right:40%;
+	}
+	.student-video{
+		height:200px;
+	}
+	.content ul.tution-table li p::before{
+		right:0;
+		width:auto;
+		bottom:auto;
+	}
+	.content ul.tution-table li p{
+		padding:45px 10px 10px;
+	}
+	.content ul.tution-table li p:first-child::before{
+		border-right:none;
+		border-bottom:1px solid #c3c3c3;
+	}
+}
+@media screen and (max-width: 400px) {
+	/*body{
+		border:1px solid black;
+	}*/
+	.home-student-pic{
+		width:90%;
+		height:150px;
+		margin:15px auto;
+		float:none;
+		overflow:hidden;
+	}
+	.int-student-pic{
+		height:180px;
+	}
+	.our-program ul li img{
+		height:147px;
+	}
+	.our-program ul li p{
+		height:144px;
+	}
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:300px !important;
+	}
+	.testi-carousel .leftArrow, .testi-carousel .jcarousel-prev{
+		left:38%;
+	}
+	.testi-carousel .rightArrow, .testi-carousel .jcarousel-next{
+		right:38%;
+	}
+	.archive-year select{
+		background-position:94% center;
+	}
+}
+@media screen and (max-width: 350px) {
+	/*body{
+		border:1px solid red;
+	}*/
+	.logo{
+		width:260px;
+	}
+	.our-program .jcarousel-item, .our-program .jcarousel-container{
+		width:264px !important;
+	}
+	.our-program .rightArrow, .our-program .jcarousel-next{
+		right:34%;
+	}
+	.our-program .leftArrow, .our-program .jcarousel-prev{
+		left:34%;
+	}
+	.fb-pic{
+		margin:6px 10px 0 0;
+	}
+	.ftlogo{
+		width:100%;
+	}
+	.ftsocial .top-social li{
+		margin:0 10px 0 0;
+	}
+	
+	/*inner page start*/
+	.testi-carousel .jcarousel-item, .testi-carousel .jcarousel-container{
+		width:260px !important;
+	}
+	.student-video{
+		height:180px;
+	}
+	.archive-year select{
+		width:76%;
+		background-position:93% center;
+	}
+	#bxslider-pager li{
+		width:130px !important;
+	}
+	.slider-thumb{
+		width:130px;
+	}
+	.bxslider-pager-wrap{
+		width:269px;
+	}
+}
+@media screen and (max-width: 300px) {
+	/*body{
+		border:1px solid yellow;
+	}*/
+}

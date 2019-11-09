@@ -1,0 +1,80 @@
+
+<?php
+
+
+$connect = mysqli_connect("localhost","root","","admin");
+
+  session_start();
+  if(isset($_SESSION['is_logged_in'])){
+    $loginsuccessurl = $base_url.'../pages/entryform.html';
+    header('location:'.$loginsuccessurl);
+  }
+
+//if insert button is pressed
+if(isset($_POST['btn'])){
+  //get the submitted data
+
+  $salt = "screw";
+  $department = $_POST['Dep'];
+  $username = $_POST['user'];
+    $password = $_POST['pass'];
+  $passwd1 = md5($password);
+  $passwd2 = sha1($passwd1);
+  $passwd3= crypt($passwd2,$salt);
+
+      $result = mysqli_query($connect,"SELECT * FROM log_tbl where department = '$department' and username = '$username' and password = '$passwd3'")
+      or die ("Failed to Query database");
+
+    $row = mysqli_fetch_array($result);
+    if ($row['department']== $department && $row['username'] == $username && $row['password'] == $passwd3 ){
+	echo '<script>alert("login success!! welcome")</script>';
+
+    $_SESSION['is_logged_in'] = TRUE;
+    $_SESSION['username'] = $username;
+  $loginsuccessurl = $base_url.'../pages/entryform.html';
+  header('location:'.$loginsuccessurl);
+
+
+}else{
+	echo '<script>alert("Access Dennied")</script>'.mysqli_error($connect);
+}
+
+}
+  ?>
+
+  <html>
+
+    <head>
+        <title>STUDENTS LOGIN</title>
+        <link  rel="stylesheet" href="log.css"> <!--href="https://fonts.googleapis.com/css?family=play"-->
+
+    </head>
+    <body>
+        <div class="signin">
+
+		<div id="frm">
+
+
+          <form method="POST">
+        <h2 style="color:white">Admin Login</h2>
+      <input type="text" id="Dep" name="Dep" placeholder="Department">
+        <input type="text" id="user" name="user" placeholder="User Name">
+        <input type="password" id="pass" name="pass" placeholder="password"><br><br>
+
+
+
+          <button type="submit" name="btn" id="btn" value="submit" class="submit" style="font-family: Tahoma, Geneva, sans-serif"><strong>Log In</strong></button><br><br>
+        <div id="container">
+          <a href="reg.html">
+              <input type="button" id="btn" value="Register" style="font-family: Tahoma, Geneva, sans-serif"></a><br><br>
+                <a href="reset.html" style="margin-right:0px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Reset Password</a>
+            <a href="forgot.html" style="margin-left:30px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Forgot Password</a><br><br><br>
+            <a href="../studentlogin/log.html" style="text-decoration:none"><strong>BACK</strong></a><br><br>
+            <a href="../index.html" style="text-decoration:none"><strong>HOME</strong></a><br><br>
+        </div><br><br><br><br><br><br>
+
+        </form>
+        </div>
+        </div
+    </body>
+</html>

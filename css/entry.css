@@ -1,0 +1,265 @@
+.studentprofile{
+  background-image:url('../fashiond/embroidery/interior design/cloth construction/business.jpg');
+  background-repeat: no-repeat;
+  background-size:100%;
+  height: 500px;
+}
+.innerprofile{
+  background-image:url('../fashiond/embroidery/interior design/cloth construction/event dec/c1485-events-wedding-3.jpg');
+  background-size: 100%;
+  width: 80%;
+  height:500px ;
+  top:1em;
+
+  background-color: black;
+  margin-left: 50%;
+  transform:translateX(-50%);
+
+}
+.stdimage{
+  width:300px;
+  height:200px;
+  left:10%;
+}
+.img_div{
+  margin-right: 10%;
+}
+.proftable{
+  position:absolute;
+  top:1em;
+  left: 50%;
+  transform:translateX(-50%);
+
+}
+.tb{
+  font-size: 17px;
+  font-family:Tahoma;
+  color:cyan;
+  font-weight: bold;
+}
+.index{
+  color:cyan;
+  font-weight: bold;
+}
+@media (max-width:750px){
+  .innerprofile{
+    background-color: black;
+    height:420px;
+  }
+  .studentprofile{
+    height:auto;
+  }
+  .index{
+    color:cyan;
+    font-weight: bold;
+  }
+  .tb{
+    font-weight: 500;
+    font-size: 16px;
+    font-family:Tahoma;
+    color:cyan;
+  }
+}
+@media (max-width:628px){
+  .innerprofile{
+    background-color: black;
+    height:350px;
+  }
+  .studentprofile{
+    height:auto;
+  }
+  .index{
+    font-weight:900;
+    color:cyan;
+  }
+  .stdimage{
+
+    height:20px;
+  }
+  .tb{
+    font-weight: 500;
+    font-size: 16px;
+    font-family:Tahoma;
+    color:cyan;
+  }
+}
+@media (max-width:526px){
+  .innerprofile{
+    background-color: black;
+    height:310px;
+  }
+  .studentprofile{
+    height:auto;
+
+  }
+
+  .stdimage{
+
+    height:20px;
+  }
+  .index{
+    font-weight:900;
+    font-size: 13px;
+    color:cyan;
+  }
+  .tb{
+    font-weight: 500;
+    font-size: 16px;
+    font-family:Tahoma;
+    color:cyan;
+  }
+}
+@media (max-width:466px){
+  .innerprofile{
+    background-color: black;
+    height:285px;
+  }
+  .studentprofile{
+    height:auto;
+
+  }
+  .index{
+    font-weight:900;
+    font-size: 13px;
+    color:cyan;
+  }
+  .stdimage{
+
+    height:20px;
+  }
+
+}
+@media (max-width:428px){
+  .innerprofile{
+    background-color: black;
+    height:285px;
+  }
+  .studentprofile{
+    background-image:url('../fashiond/embroidery/interior design/cloth construction/business.jpg');
+    background-repeat: repeat;
+  }
+
+  .index{
+    font-weight:900;
+    font-size: 14px;
+    color:cyan;
+  }
+  .stdimage{
+
+    height:20px;
+  }
+
+}
+@media (max-width:238px){
+  .innerprofile{
+    background-color: black;
+    height:285px;
+  }
+  .studentprofile{
+    background-image:url('../fashiond/embroidery/interior design/cloth construction/business.jpg');
+    background-repeat: repeat;
+  }
+
+  .stdimage{
+    height: 20px;
+  }
+  .index{
+    font-weight:900;
+    font-size: 13px;
+    color:cyan;
+  }
+}
+.mobile-view{
+  margin-top:5em;
+  margin-bottom:5em;
+  height:auto;
+  outline-offset: 3em;
+  outline:2px solid gray;
+  margin-left:40%;
+  transform:translate3d(-50%);
+
+}
+.tog{
+  color:black;
+  outline-offset: 1em;
+  outline: 2px solid gray;
+ margin-top: 2em;
+  margin-bottom: 1.8em;
+  margin-left: 80%;
+  transform: translateX(-50%);
+}
+.mobpreload{
+  display: inline-block;
+  background-color: black;
+  height: 50px;
+  display: none;
+}
+.mobpreload ul li{
+
+  margin:2.5em;
+  display: inline-flex;
+  margin-top: 1em;
+}
+.tog2{
+  color:green;
+  outline-offset: 1em;
+  outline: 2px solid blue;
+
+
+  margin-bottom: 3em;
+  margin-left: 20%;
+  transform: translateX(-50%);
+}
+
+
+@media (max-width:1026px){
+  .tog2{
+    display:none;
+
+  }
+  .desktop{
+    display:none;
+  }
+}
+@media (min-width:1026px){
+  .tog{
+    display:none;
+  }
+  .video{
+    display: none;
+  }
+  .tog2{
+    display:flex;
+
+  }
+}
+@media (max-width:766px){
+  .mobpreload{
+    display:flex;
+  }
+}
+@media (max-width:1203px){
+  .dropdown{
+    margin:2px;
+  }
+}
+.upload{
+  background-image:url('img/post_image/h.png');
+}
+.fom{
+  margin-left:45%;
+  transform:translateX(-50%);
+  margin-top:10em;
+  outline:2px solid gray;
+  outline-offset: 5em;
+  background-color:gray;
+}
+.error{
+  color:red;
+}
+.success{
+  color:#ff9966;
+  text-align:center;
+  font-weight:bold;
+  font-size:14px;
+}

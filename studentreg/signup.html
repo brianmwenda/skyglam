@@ -1,0 +1,116 @@
+<?php
+$connect = mysqli_connect("localhost","root","","admin");
+
+
+//if insert button is pressed
+if(isset($_POST['btn'])){
+  //get the submitted data
+  $salt = "screw";
+  $password = $_POST['pass'];
+
+  $firstname = $_POST['firstnm'];
+  $lastname = $_POST['lastnm'];
+  $regino = $_POST['regno'];
+  $conpass = $_POST['confirmpass'];
+  $emailadd = $_POST['email'];
+  $cos = $_POST['course'];
+  $yofs = $_POST['yos'];
+
+
+  $passwd1 = md5($password);
+  $passwd2 = sha1($passwd1);
+  $passwd3= crypt($passwd2,$salt);
+
+
+   if($firstname !=="" && $lastname !=="" && $regino !=="" && $emailadd !=="" && $passwd3 !=="" && $cos !=="" && $yofs !==""){
+      if($conpass == $password){
+        $query= "INSERT INTO std_tbl(firstname,lastname,registration,password,email,course,year) VALUES ('$firstname','$lastname','$regino','$passwd3','$emailadd','$cos','$yofs')";
+      if(mysqli_query($connect, $query)){
+
+          echo '<script>alert("Registration successful!")</script>';
+
+      }else{
+
+         echo '<script>alert("Registration failded!")</script>'.mysqli_error($connect);
+
+       }
+      }else{
+
+      echo '<script>alert("Please enter the correct details!")</script>';
+
+      }
+
+    }else{
+
+     echo '<script>alert("Please enter all the fields!")</script>'.mysqli_error($connect);
+
+    }
+
+
+  }
+
+  ?>
+  <?php
+  if(isset($_FILES['image'])){
+    $errors= array();
+    $file_name = $_FILES['image']['name'];
+    $file_size = $_FILES[image]['size'];
+    $file_tmp = $_FILES['image']['tmp_name'];
+    $file_type = $_FILES['image']['type'];
+    $file_ext = "jpg";
+
+    $extensions = array("jpeg", "jpg", "png");
+
+    if(in_array($file_ext, $extensions)=== false){
+      $errors = "extensions not allowed";
+
+    }if($file_size > 2046000){
+      $errors = "file too large";
+    }
+    if(empty($errors) == true){
+      move_uploaded_file($file_tmp, "img/images/".$file_name);
+      echo "upload success";
+    }else{
+      print_r($errors);
+    }
+    }
+  ?>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STUDENTS REGISTRATION</title>
+    <link href="sgnup.css" rel="stylesheet" type="text/css"/>
+    <!--link href="https://fonts.googleapis.com/css?family=play" rel="stylesheet"-->
+
+
+
+</head>
+<body>
+    <div class="signup">
+        <form method="POST">
+            <h2 style="color:white;">Sign up/Register</h2>
+            <input type="text" id="firstnm" name="firstnm" placeholder="First Name"><br><br>
+            <input type="text" id="lastnm" name="lastnm" placeholder="Last Name"><br><br>
+            <input type="text" id="regno" name="regno" placeholder="Registration Number"><br><br>
+            <input type="password" id="pass" name="pass" placeholder="password"><br><br>
+            <input type="password" id="confirmpass" name="confirmpass" placeholder="confirm password"><br><br>
+            <input type="text" id="email" name="email" placeholder="Email address"><br><br><br>
+            <input type="text" id="course" name="course" placeholder="Course Name"><br><br>
+            <input type="year" id="yos" name="yos" placeholder="Year Of Study"><br><br>
+      <form action=" " enctype="multipart/form-data" method="POST">
+            <input type="file" name="image">
+            <input type="submit">
+        </form>
+              <button type="submit" name="btn" id="btn" value="submit" class="submit" style="font-family: Tahoma, Geneva, sans-serif"><strong>Submit</strong></button><br><br><br>
+
+               Already have an account?<a href="../studentlogin/log.html" style="text-decoration:none;font-family:'play',sans-serif; color: yellow">&nbsp;Log In</a><br><br>
+               <a href="../index.html" style="text-decoration:none"><strong>HOME</strong></a><br><br>
+
+
+        </form>
+    </div>
+</body>
+</html>
