@@ -113,6 +113,7 @@ nav ul li a:hover, #hd ul li a:hover{
   background: goldenrod;
   padding: 10px;
   border-radius: 20%;
+  display:none;
 }
 #onclick:hover{
   color:white;
