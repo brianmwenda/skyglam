@@ -13,7 +13,8 @@
          background: transparent;
          background-position: center;
          background-size: cover;
-         display: -webkit-box;display: -ms-flexbox;
+         display: -webkit-box;
+         display: -ms-flexbox;
          display: -webkit-flex;
          display: flex;
          -webkit-box-pack: center;

@@ -108,7 +108,7 @@
 
   														<li><a href="https://ke.linkedin.com/in/skyglam-fashion-945083179"><i class="fa fa-linkedin"></i></a>
 
-                          
+
                           </ul>
                         </div>
                       </div>
@@ -118,6 +118,26 @@
 
 <!--script section end-->
 </head>
+<!--script section end-->
+
+<div  class="video" style="height:10px;margin-bottom:12em">
+  <div class=video-area>
+
+    <div>
+      <div class=video-content>
+        <H4><strong>SKYGLAM SCHOOL OF FASHION</strong></H4>
+          <button id="tog" class="tog"  data-toggle=collapse><img src="../img/logos/tog-btn.jpg"></img>
+
+
+          </button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!--header section start-->
 <body>
 
 	<!--header section start-->
@@ -125,8 +145,8 @@
     <!--header section end-->
 
     <!--navigation section start-->
-    <header>
-      <div class=nav-wrapper>
+    <header class="desktop"  >
+      <div class=nav-wrapper  id="hd" class="hide">
         <nav class="navbar navbar-custom navbar-default"data-offset-top=50 data-spy=affix>
           <div class=container><div class=row>
             <div class="navbar-header navbar-header-custom">
@@ -156,12 +176,67 @@
                                 </nav>
                               </div>
                             </header>
+                            <!--mobile vieew start-->
+
+                            <div  style="background-image:url('../img/post_image/aa.png')">
+                                    <div  class="mobile-view" id="hd2"  style="display:none">
+                                      <li class=dropdown ><a href=../index.html style="color:gray;">Home</a>
+                                      <li class=dropdown><a class=dropdown-toggle aria-expanded=false aria-haspopup=true data-toggle=dropdown style="color:gray;">Academics</a>
+                                        <ul class="dropdown-menu dropdown-menu-left">
+                                          <li><a href="unitreg.html" >unit registration</a>
+                                            <li><a href="regd.html" >units registered</a>
+                                              <li><a href="results.html" >Results</a>
+                                                  </ul>
+                                    <li class=dropdown><a class=dropdown-toggle aria-expanded=false aria-haspopup=true data-toggle=dropdown style="color:gray;">Finance</a>
+                                      <ul class="dropdown-menu dropdown-menu-left" >
+                                        <li><a href="fee.html" >fee statement</a>
+                                          <li><a href="" >print fee statement</a>
+
+                                                </ul>
+
+                                                                  <li class=dropdown><a href=contact_us.html style="color:gray;" >Contact Us</a>
+                                                                  <li class=dropdown ><a href="logout.html" style="color:gray;">Logout</a>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                    <!--mobile vieew end-->
+
+
+                                    <script>
+
+                                    var toggle1 = document.getElementById('tog');
+                                    var toggle2 = document.getElementById('body');
+                                    var head1 = document.getElementById('hd');
+                                    var head2 = document.getElementById('hd2');
+                                    toggle1.addEventListener("click",function(){
+                                      head1.style.display = "none";
+                                      head2.style.display = "table";
+                                    });
+
+                                    toggle2.addEventListener("click",function(){
+                                      head1.style.display = "";
+                                      head2.style.display = "none";
+                                    });
+
+
+                                </script>
+
+                        <script>
+                        var head1 = document.getElementById('hd');
+                        var head2 = document.getElementById('hd2');
+                        head2.addEventListener("mouseleave" || "blur",function(){
+
+                        head2.style.display = "none";
+                        });
+
+                        </script>
     <!--navigation section end-->
     <div style="background-color:gray;height:2px"> </div>
     <!--banner section start-->
 
 
-              <div class="studentprofile" >
+              <div  id="contents" class="studentprofile" >
                   <div class="innerprofile">
                       <table class="proftable">
                           <tr><td >
@@ -232,7 +307,14 @@
               </div>
 
             <!--banner section end-->
+            <script>
+            var head2 = document.getElementById('hd2');
+            var blur = document.getElementById('sl')
+            blur.addEventListener("click",function(){
 
+            	head2.style.display = "none";
+            });
+            </script>
     <!--content section start-->
     <div style="background-color:gray;height:2px"> </div>
     <!--footer section start-->
@@ -337,6 +419,7 @@
           <ul class="ftnav">
               <ul class="ftnav">
     <li><a href="../index.html"  >Home</a></li>
+    <li><a href="../fashionhouse/fashionhouse.html"  >Fashion house</a></li>
       <li ><a href=../studentlogin/log.html> Portal</a>
     <li><a href="pages/about_us.html">About Us</a></li>
 
@@ -360,3 +443,12 @@
 
 
     </html>
+    <script>
+    var toggle2 = document.getElementById('contents');
+    var head1 = document.getElementById('hd');
+    var head2 = document.getElementById('hd2');
+    toggle2.addEventListener("click",function(){
+
+      head2.style.display = "none";
+    });
+    </script>

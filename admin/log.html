@@ -11,13 +11,13 @@ $connect = mysqli_connect("localhost","root","","admin");
   }
 
 //if insert button is pressed
-if(isset($_POST['btn'])){
+if(isset($_GET['btn'])){
   //get the submitted data
 
   $salt = "screw";
-  $department = $_POST['Dep'];
-  $username = $_POST['user'];
-    $password = $_POST['pass'];
+  $department = $_GET['Dep'];
+  $username = $_GET['user'];
+    $password = $_GET['pass'];
   $passwd1 = md5($password);
   $passwd2 = sha1($passwd1);
   $passwd3= crypt($passwd2,$salt);
@@ -55,7 +55,7 @@ if(isset($_POST['btn'])){
 		<div id="frm">
 
 
-          <form method="POST">
+          <form method="GET">
         <h2 style="color:white">Admin Login</h2>
       <input type="text" id="Dep" name="Dep" placeholder="Department">
         <input type="text" id="user" name="user" placeholder="User Name">

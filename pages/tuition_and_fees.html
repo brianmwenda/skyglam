@@ -26,7 +26,7 @@
 <link href=../css/default.css rel=stylesheet>
 <link href=../css/styles1.css rel=stylesheet>
 <link href=../css/styles.css rel=stylesheet>
-
+<link href=../css/entry.css rel=stylesheet>
 <!--css section start-->
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/slider.css" />
@@ -117,6 +117,26 @@
 
 <!--script section end-->
 </head>
+<!--script section end-->
+
+<div  class="video" style="height:10px;margin-bottom:12em">
+  <div class=video-area>
+
+    <div>
+      <div class=video-content>
+        <H4><strong>SKYGLAM SCHOOL OF FASHION</strong></H4>
+          <button id="tog" class="tog"  data-toggle=collapse><img src="../img/logos/tog-btn.jpg"></img>
+
+
+          </button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!--header section start-->
 <body>
 
 	<!--header section start-->
@@ -124,8 +144,8 @@
     <!--header section end-->
 
     <!--navigation section start-->
-    <header>
-      <div class=nav-wrapper>
+    <header class="desktop"  >
+      <div class=nav-wrapper  id="hd" class="hide">
         <nav class="navbar navbar-custom navbar-default"data-offset-top=50 data-spy=affix>
           <div class=container><div class=row>
             <div class="navbar-header navbar-header-custom">
@@ -170,12 +190,78 @@
                               </div>
                             </header>
     <!--navigation section end-->
+    <!--mobile vieew start-->
 
+    <div  style="background-image:url('../img/post_image/aa.png')">
+            <div  class="mobile-view" id="hd2"  style="display:none">
+
+              <ul  >
+                <li class=dropdown ><a href=../home.html >HOME</h3></a>
+
+                  <li><a href="../fashionhouse/fashionhouse.html">FASHION HOUSE</a>
+                  <li class=dropdown><a href=about_us.html >ABOUT US</a>
+
+                        <li class=dropdown><a class=dropdown-toggle aria-expanded=false aria-haspopup=true data-toggle=dropdown >EXPLORE</a>
+                          <ul class="dropdown-menu dropdown-menu-left">
+
+                            <li><a href="interior design gallery.html" style="color:goldenrod">School of Interior Design</a>
+                              <li><a href="Embroidery gallery.html" style="color:goldenrod">School of Embroidery</a>
+                                <li><a href="Event decoration gallery.html" style="color:goldenrod">School of Event Decoration</a>
+                                  <li><a href="Cloth construction gallery.html" style="color:goldenrod">School of Cloth Construction</a>
+                                    <li><a href="fashion design gallery.html" style="color:goldenrod">School Of Fashion Design</a>
+                                    </ul>
+
+
+
+                                      <li class=dropdown><a href=tuition_and_fees.html >COURSES</a>
+
+
+
+                                          <li class=dropdown><a href=contact_us.html >CONTACT US</a>
+                                              <li class=dropdown><a href=# class=dropdown-toggle aria-expanded=false aria-haspopup=true data-toggle=dropdown >LOGIN</h3></a>
+                                                <ul class="dropdown-menu dropdown-menu-left" >
+                                                  <li><a href="../studentlogin/log.html"><h5 style="color:goldenrod">Sign In</h5></a>
+                                                    <li><a href="../studentreg/signup.html"><h5 style="color:goldenrod">Sign Up</h5></a>
+              </ul>
+            </div>
+          </div>
+
+            <!--mobile vieew end-->
+
+
+            <script>
+
+            var toggle1 = document.getElementById('tog');
+            var toggle2 = document.getElementById('body');
+            var head1 = document.getElementById('hd');
+            var head2 = document.getElementById('hd2');
+            toggle1.addEventListener("click",function(){
+              head1.style.display = "none";
+              head2.style.display = "table";
+            });
+
+            toggle2.addEventListener("click",function(){
+              head1.style.display = "";
+              head2.style.display = "none";
+            });
+
+
+        </script>
+
+  <script>
+  var head1 = document.getElementById('hd');
+  var head2 = document.getElementById('hd2');
+  head2.addEventListener("mouseleave" || "blur",function(){
+
+  head2.style.display = "none";
+  });
+
+  </script>
     <!--banner section start-->
         <div class="inner-banner">
     	<ul class="rslides">
                     	<li>
-            	<img src="../fashiond/embroidery/interior design/cloth construction/business.jpg" alt="" title="" style="size:100%;height:350px;"/>
+            	<img id="contents" src="../fashiond/embroidery/interior design/cloth construction/business.jpg" alt="" title="" style="size:100%;height:350px;"/>
                 <div class="wrapper">
                                     	<div class="inner-banner-cont" style="background-color:white;border-radius:5%">
                     	<h1 style="color: #EA8F1D">Courses & Tuition Fees</h1>
@@ -381,6 +467,14 @@ td.td1 {padding: 0.0px 5.0px 0.0px 5.0px}
 
     <!--call to action end-->
 <div style="background-color:gray;height:2px"> </div>
+<script>
+var head2 = document.getElementById('hd2');
+var blur = document.getElementById('sl')
+blur.addEventListener("click",function(){
+
+	head2.style.display = "none";
+});
+</script>
     <!--footer section start-->
     <footer>
       <div class=container>
@@ -483,6 +577,7 @@ td.td1 {padding: 0.0px 5.0px 0.0px 5.0px}
           <ul class="ftnav">
               <ul class="ftnav">
     <li><a href="../index.html"  >Home</a></li>
+    <li><a href="../fashionhouse/fashionhouse.html"  >Fashion house</a></li>
     <li ><a href=../studentlogin/log.html> Portal</a>
     <li><a href="pages/about_us.html">About Us</a></li>
 
@@ -504,5 +599,13 @@ td.td1 {padding: 0.0px 5.0px 0.0px 5.0px}
 
     </body>
 
-    <!-- Mirrored from www.aofdesign.com/pages/about_us.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2019 08:36:29 GMT -->
     </html>
+    <script>
+    var toggle2 = document.getElementById('contents');
+    var head1 = document.getElementById('hd');
+    var head2 = document.getElementById('hd2');
+    toggle2.addEventListener("click",function(){
+
+      head2.style.display = "none";
+    });
+    </script>

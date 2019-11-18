@@ -127,10 +127,29 @@
 
 
     <!--header section end-->
+    <!--script section end-->
 
+    <div  class="video" style="height:10px;margin-bottom:12em">
+      <div class=video-area>
+
+        <div>
+          <div class=video-content>
+            <H4><strong>SKYGLAM SCHOOL OF FASHION</strong></H4>
+              <button id="tog" class="tog"  data-toggle=collapse><img src="../img/logos/tog-btn.jpg"></img>
+
+
+              </button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    	<!--header section start-->
     <!--navigation section start-->
-    <header>
-      <div class=nav-wrapper>
+    <header class="desktop"  >
+      <div class=nav-wrapper  id="hd" class="hide">
         <nav class="navbar navbar-custom navbar-default"data-offset-top=50 data-spy=affix>
           <div class=container><div class=row>
             <div class="navbar-header navbar-header-custom">
@@ -167,20 +186,87 @@
                                                           </ul>
 
                                           </ul>
-                                        </ul>
+
                                       </div>
                                     </div>
                                   </div>
                                 </nav>
                               </div>
                             </header>
+                            <!--mobile vieew start-->
+
+                            <div  style="background-image:url('../img/post_image/aa.png')">
+                                    <div  class="mobile-view" id="hd2"  style="display:none">
+
+                                      <ul  >
+                                        <li class=dropdown ><a href=../home.html >HOME</a>
+
+                                          <li><a href="../fashionhouse/fashionhouse.html" >FASHION HOUSE</a>
+                                          <li class=dropdown><a href=about_us.html >ABOUT US</a>
+
+                                                <li class=dropdown><a class=dropdown-toggle aria-expanded=false aria-haspopup=true data-toggle=dropdown >EXPLORE</a>
+                                                  <ul class="dropdown-menu dropdown-menu-left">
+
+                                                    <li><a href="interior design gallery.html" style="color:goldenrod">School of Interior Design</a>
+                                                      <li><a href="Embroidery gallery.html" style="color:goldenrod">School of Embroidery</a>
+                                                        <li><a href="Event decoration gallery.html" style="color:goldenrod">School of Event Decoration</a>
+                                                          <li><a href="Cloth construction gallery.html" style="color:goldenrod">School of Cloth Construction</a>
+                                                            <li><a href="fashion design gallery.html" style="color:goldenrod">School Of Fashion Design</a>
+                                                            </ul>
+
+
+
+                                                              <li class=dropdown><a href=tuition_and_fees.html >COURSES</a>
+
+
+
+                                                                  <li class=dropdown><a href=contact_us.html >CONTACT US</a>
+                                                                      <li class=dropdown><a href=# class=dropdown-toggle aria-expanded=false aria-haspopup=true data-toggle=dropdown >LOGIN</a>
+                                                                        <ul class="dropdown-menu dropdown-menu-left" >
+                                                                          <li><a href="../studentlogin/log.html"><h5 style="color:goldenrod">Sign In</h5></a>
+                                                                            <li><a href="../studentreg/signup.html"><h5 style="color:goldenrod">Sign Up</h5></a>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                    <!--mobile vieew end-->
+
+
+                                    <script>
+
+                                    var toggle1 = document.getElementById('tog');
+                                    var toggle2 = document.getElementById('body');
+                                    var head1 = document.getElementById('hd');
+                                    var head2 = document.getElementById('hd2');
+                                    toggle1.addEventListener("click",function(){
+                                      head1.style.display = "none";
+                                      head2.style.display = "table";
+                                    });
+
+                                    toggle2.addEventListener("click",function(){
+                                      head1.style.display = "";
+                                      head2.style.display = "none";
+                                    });
+
+
+                                </script>
+
+                        <script>
+                        var head1 = document.getElementById('hd');
+                        var head2 = document.getElementById('hd2');
+                        head2.addEventListener("mouseleave" || "blur",function(){
+
+                        head2.style.display = "none";
+                        });
+
+                        </script>
     <!--navigation section end-->
 
     <!--banner section start-->
         <div class="inner-banner">
     	<ul class="rslides">
                     	<li>
-            	<img src="../fashiond/embroidery/interior design/cloth construction/shutterstock_732074710.jpg" alt="" title=""  style="size:100%;height:300px;"/>
+            	<img id="contents" src="../fashiond/embroidery/interior design/cloth construction/shutterstock_732074710.jpg" alt="" title=""  style="size:100%;height:300px;"/>
                 <div class="wrapper">
                                     	<div class="inner-banner-cont" style="background-color:white;border-radius:5%">
                     	<h1 style="color: #EA8F1D">Contact Us</h1>
@@ -209,7 +295,7 @@
 
 
 
-                           </p>
+
                         </li>
                           <li>
                         	<p><span>Toll-free:</span> +254702 931 021 / 723 458 894</p>
@@ -288,17 +374,17 @@
          zoom: 12
        });
      }
-     var marker = new google.maps.Marker({
+     var Marker = new google.maps.Marker({
        position:{lat:-1.2822, lng:36.8195},
        map:map,
        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
 
      });
-     var infoWindow = new google.maps.InfoWindow({
+     var InfoWindow = new google.maps.InfoWindow({
        content:'<h1>nairobi</h1>'
      });
-     marker.addEventListener("click",function(){
-       inforWindow.open(map, marker);
+     Marker.addEventListener("click",function(){
+       inforWindow.open(map, Marker);
      });
      </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUXAE93JZgPOpdsgagyqNvKD_OV3i5wfo&callback=initMap" async defer>
@@ -308,7 +394,14 @@
 
 
 
+    <script>
+    var head2 = document.getElementById('hd2');
+    var blur = document.getElementById('sl')
+    blur.addEventListener("click",function(){
 
+    	head2.style.display = "none";
+    });
+    </script>
  <!--call to action start-->
      <div class="call-to-action"  style="background-image:url('../img/slider/clto_action_pattern.png')">
     	<div class="wrapper">
@@ -430,6 +523,7 @@
           <ul class="ftnav">
               <ul class="ftnav">
     <li><a href="../index.html"  >Home</a></li>
+    <li><a href="../fashionhouse/fashionhouse.html"  >Fashion house</a></li>
       <li ><a href=../studentlogin/log.html> Portal</a>
     <li><a href="about_us.html" >About Us</a></li>
 
@@ -449,3 +543,13 @@
     <!--footer section end-->
 
     </body>
+</html>
+<script>
+var toggle2 = document.getElementById('contents');
+var head1 = document.getElementById('hd');
+var head2 = document.getElementById('hd2');
+toggle2.addEventListener("click",function(){
+
+  head2.style.display = "none";
+});
+</script>
