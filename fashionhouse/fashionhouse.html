@@ -45,17 +45,7 @@
 
 
 </head>
-<body class="home-page">
-
-<div id="wrapper" class="pt_storefront has-reduced-footer">
-
-
-<div class="js-header-wrapper relative js-link-wrapper sticky-header header-non-transactional" data-via="site-header">
-
-<div class="js-header-fixed header-main-content clearfix">
-<header id="header" class="js-site-header site-header" role="banner">
-  <!--preloader start-->
-  <div id=preloader >
+<div id=preloader >
   <div class="row loader">
     <div class=loader-icon></div>
   </div>
@@ -179,6 +169,34 @@
 																					<!--mobile vieew end-->
 
 
+																					<script>
+
+																				  var toggle1 = document.getElementById('tog');
+																					var toggle2 = document.getElementById('body');
+																					var head1 = document.getElementById('hd');
+																					var head2 = document.getElementById('hd2');
+																					toggle1.addEventListener("click",function(){
+																						head1.style.display = "none";
+																						head2.style.display = "table";
+																					});
+
+																					toggle2.addEventListener("click",function(){
+																						head1.style.display = "";
+																						head2.style.display = "none";
+																					});
+
+
+																			</script>
+
+													<script>
+													var head1 = document.getElementById('hd');
+														var head2 = document.getElementById('hd2');
+													head2.addEventListener("mouseleave",function(){
+
+														head2.style.display = "none";
+													});
+
+													</script>
 													<style>
 													@media (max-width:1200px){
 															#tog{
@@ -193,6 +211,14 @@
 														}
 													}
 													</style>
+
+
+
+
+
+
+
+
 
 
 
@@ -288,37 +314,12 @@
                               }
                             }
                         </style>
-             
+                <!--mobile vieew start-->
 
-                        <script>
-
-                        var toggle1 = document.getElementById('tog');
-                        var toggle2 = document.getElementById('body');
-                        var head1 = document.getElementById('hd');
-                        var head2 = document.getElementById('hd2');
-                        toggle1.addEventListener("click",function(){
-                          head1.style.display = "none";
-                          head2.style.display = "table";
-                        });
-
-                        toggle2.addEventListener("click",function(){
-                          head1.style.display = "";
-                          head2.style.display = "none";
-                        });
+                        <!--mobile vieew end-->
 
 
-                    </script>
 
-        <script>
-        var head1 = document.getElementById('hd');
-          var head2 = document.getElementById('hd2');
-        head2.addEventListener("mouseleave",function(){
-
-          head2.style.display = "none";
-        });
-
-        </script>
-</header>
 <div style="background-color:gray;height:2px"> </div>
 
 
@@ -706,7 +707,7 @@ ga('send', 'pageview');
 </script>
 
 
-</body>
+
 </html>
 
 <script>
