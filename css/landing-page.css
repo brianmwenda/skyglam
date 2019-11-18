@@ -3,6 +3,7 @@
   padding:0;
   box-sizing: border-box;
   text-align: justify;
+
 }
 .location{
   padding:10px;
@@ -62,9 +63,9 @@ section{
   left: -40%;
 }
 #hd ul li a{
-  padding: 6px;
+  padding: 4px;
   display: none;
-  color:gray;
+  color:#5c3c19;
   text-decoration:inherit;
 }
 
@@ -72,6 +73,7 @@ section{
   font-size: 20px;
   display: inline-block;
   padding: 10px;
+
 }
 nav{
   display:none ;
@@ -81,7 +83,7 @@ nav{
   border-radius: 19px 0px 19px 19px;
 }
 nav ul li{
-  font-size: 20px;
+  font-size: 15px;
   display: table;
   padding: 10px;
 
@@ -107,13 +109,12 @@ nav ul li a:hover, #hd ul li a:hover{
 
 #onclick{
   color: white;
-  position: absolute;
   margin-left: 20%;
   transform: translateX(-50%);
   background: goldenrod;
   padding: 10px;
   border-radius: 20%;
-  display:none;
+  position: relative;
 }
 #onclick:hover{
   color:white;
@@ -126,7 +127,7 @@ nav ul li a:hover, #hd ul li a:hover{
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+    box-sizing: border-box;
 }
 #drop{
   width: 100%;
@@ -134,7 +135,7 @@ nav ul li a:hover, #hd ul li a:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  box-sizing: border-box;
 }
 .description{
   width: 100%;
@@ -292,6 +293,8 @@ nav ul li a:hover, #hd ul li a:hover{
     color:goldenrod;
     font-family:Sans-serif;
     margin-left:13%;
+
+    width:80%;
   }
   #des{
     width: 100%;
@@ -310,6 +313,13 @@ nav ul li a:hover, #hd ul li a:hover{
   }
   .clear-fix{
     height: 50px;
+  }
+  .desktop{
+
+      width:100%;
+  }
+  .mobile-view{
+      box-sizing: border-box;
   }
 @media (min-width:320px){
   .start{
@@ -438,15 +448,20 @@ nav ul li a:hover, #hd ul li a:hover{
 
     box-sizing: border-box;
   }
+  #drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   #des{
-    max-width: 50%;
+    max-width: 90%;
     padding:10px;
   }
   .video2{
-    padding:3px;
-    margin-left: 50%;
-    margin-top: -50%;
+    max-width: 50%;
+    padding:30px;
   }
+
   #tog{
     display: none;
   }
@@ -457,6 +472,7 @@ nav ul li a:hover, #hd ul li a:hover{
     margin-left: 10%;
   }
   nav ul li{
+    margin-left: 10%;
     display: inline-block;
   }
   #hd ul li a{
@@ -464,16 +480,20 @@ nav ul li a:hover, #hd ul li a:hover{
   }
 
 }
+
+@media(min-width:980px){
+  #hd ul li a{
+    padding: 3px;
+
+
+  }
+  #hd ul li{
+    font-size:15px;
+    padding:5px;
+  }
+}
 @media (min-width:1037px){
-  .video2{
-    padding:3px;
-    margin-left: 50%;
-    margin-top: -30%;
-  }
-  #des{
-    max-width: 55%;
-    padding:10px;
-  }
+
   .fashion{
 
   }
@@ -486,15 +506,8 @@ nav ul li a:hover, #hd ul li a:hover{
   }
 }
 @media (min-width:1223px){
-  .video2{
-    padding:3px;
-    margin-left: 50%;
-    margin-top: -25%;
-  }
-  #des{
-    max-width: 55%;
-    padding:10px;
-  }
+
+
   .fashion{
 
   }
@@ -515,15 +528,7 @@ nav ul li a:hover, #hd ul li a:hover{
   }
 }
 @media (min-width:1351px){
-  .video2{
-    padding:3px;
-    margin-left: 50%;
-    margin-top: -20%;
-  }
-  #des{
-    max-width: 60%;
-    padding:10px;
-  }
+
   .fashion{
 
   }
@@ -544,15 +549,7 @@ nav ul li a:hover, #hd ul li a:hover{
   }
 }
 @media (min-width:1391px){
-  .video2{
-    padding:3px;
-    margin-left: 50%;
-    margin-top: -16%;
-  }
-  #des{
-    max-width: 55%;
-    padding:10px;
-  }
+
   .headline{
     font-size: 95px;
   }
@@ -562,15 +559,7 @@ nav ul li a:hover, #hd ul li a:hover{
   }
 }
 @media (min-width:1651px){
-  .video2{
-    padding:3px;
-    margin-left: 50%;
-    margin-top: -15%;
-  }
-  #des{
-    max-width: 55%;
-    padding:10px;
-  }
+
   .fashion{
 
   }
