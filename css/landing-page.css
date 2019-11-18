@@ -235,7 +235,7 @@ nav ul li a:hover, #hd ul li a:hover{
   .footer-div{
     padding:10px;
     max-width:700px;
-    margin-left:-1%
+    margin-left:-1%;
   }
   .tred{
 
@@ -494,9 +494,7 @@ nav ul li a:hover, #hd ul li a:hover{
 }
 @media (min-width:1037px){
 
-  .fashion{
 
-  }
   .headline{
     font-size: 80px;
   }
@@ -508,9 +506,7 @@ nav ul li a:hover, #hd ul li a:hover{
 @media (min-width:1223px){
 
 
-  .fashion{
 
-  }
   .headline{
     font-size: 85px;
   }
@@ -529,9 +525,6 @@ nav ul li a:hover, #hd ul li a:hover{
 }
 @media (min-width:1351px){
 
-  .fashion{
-
-  }
   .headline{
     font-size: 90px;
   }
@@ -560,9 +553,7 @@ nav ul li a:hover, #hd ul li a:hover{
 }
 @media (min-width:1651px){
 
-  .fashion{
-
-  }
+  
   #mainImage{
     width:550px;
      height:450px;
