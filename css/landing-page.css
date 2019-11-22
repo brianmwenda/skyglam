@@ -54,7 +54,10 @@ section{
   transform: translateX(-50%);
 
 }
-
+#tit{
+  font-size: 20px;
+  color:goldenrod;
+}
 
 #hd2{
   position: absolute;
@@ -68,6 +71,7 @@ section{
   color:#5c3c19;
   text-decoration:inherit;
 }
+
 
 #hd ul li{
   font-size: 20px;
@@ -108,14 +112,13 @@ nav ul li a:hover, #hd ul li a:hover{
 
 
 #onclick{
-  background: goldenrod;
   color: white;
-  position: relative;
   margin-left: 20%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
+  background: goldenrod;
   padding: 10px;
   border-radius: 20%;
-  
+  position: relative;
 }
 #onclick:hover{
   color:white;
@@ -234,9 +237,9 @@ nav ul li a:hover, #hd ul li a:hover{
     flex-wrap: wrap;
   }
   .footer-div{
-    padding:10px;
+    padding:15px;
     max-width:700px;
-    margin-left:-1%;
+    margin-left:-1%
   }
   .tred{
 
@@ -245,7 +248,7 @@ nav ul li a:hover, #hd ul li a:hover{
   }
   .vid2{
     padding:10px;
-    width: 100%;
+    width:100%;
     height: 100%;
   }
 
@@ -364,9 +367,12 @@ nav ul li a:hover, #hd ul li a:hover{
     width:40%;
     border-radius: 19px 0px 19px 19px;
   }
+
+}
+@media(min-width:560px){
   #tit{
-    margin-left:10%;
-    transform: translateX(-50%);
+    font-size: 30px;
+    transform: translateX();
   }
 }
 @media (min-width:600px){
@@ -381,10 +387,7 @@ nav ul li a:hover, #hd ul li a:hover{
   .school-btn2{
     margin-left:16em;
   }
-  #tit{
-    margin-left:20%;
-    transform: translateX(-50%);
-  }
+
 }
 @media (min-width:700px){
   .headline{
@@ -398,10 +401,7 @@ nav ul li a:hover, #hd ul li a:hover{
   .school-btn2{
     margin-left:20em;
   }
-  #tit{
-    margin-left:25%;
-    transform: translateX(-50%);
-  }
+
 }
 @media (min-width:800px){
   .headline{
@@ -479,7 +479,17 @@ nav ul li a:hover, #hd ul li a:hover{
   #hd ul li a{
     display: inline-flex;
   }
+  #tit{
+    margin-left:5%;
+    transform: translateX(-50%);
+  }
 
+}
+@media(min-width:960px){
+  #tit{
+    margin-left:10%;
+    transform: translateX(-50%);
+  }
 }
 
 @media(min-width:980px){
@@ -495,19 +505,23 @@ nav ul li a:hover, #hd ul li a:hover{
 }
 @media (min-width:1037px){
 
+  .fashion{
 
+  }
   .headline{
     font-size: 80px;
   }
   #tit{
-    margin-left:30%;
+    margin-left:15%;
     transform: translateX(-50%);
   }
 }
 @media (min-width:1223px){
 
 
+  .fashion{
 
+  }
   .headline{
     font-size: 85px;
   }
@@ -526,6 +540,9 @@ nav ul li a:hover, #hd ul li a:hover{
 }
 @media (min-width:1351px){
 
+  .fashion{
+
+  }
   .headline{
     font-size: 90px;
   }
@@ -554,7 +571,9 @@ nav ul li a:hover, #hd ul li a:hover{
 }
 @media (min-width:1651px){
 
-  
+  .fashion{
+
+  }
   #mainImage{
     width:550px;
      height:450px;
@@ -569,15 +588,27 @@ nav ul li a:hover, #hd ul li a:hover{
    #hd ul li a{
      font-size: 30px;
    }
+   #tit{
+     font-size: 40px;
+     margin-left: 6%;
+   }
 }
 @media(min-width:1300px){
    #hd ul li a{
      font-size: 35px;
    }
+   #tit{
+     font-size: 45px;
+     margin-left: 6%;
+   }
 }
 @media(min-width:1500px){
    #hd ul li a{
      font-size:40px;
+   }
+   #tit{
+     font-size: 50px;
+     margin-left: 9%;
    }
 }
 @media(min-width:1686px){
